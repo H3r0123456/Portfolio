@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFOLIO</title>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <h2>KRLBRY</h2>
+            </div>
+            <div class="right">
+                <a href="#home">Home</a>
+                <a href="#aboutme">About Me</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="homepage">
+                <h1 style="text-align: center; margin-top: 90px; font-size: xxx-large; color: antiquewhite;">Hi!</h1>
+                <h4 style="text-align: center; margin-top: 140px; color: aliceblue;">Karl Brian Balang</h4>
+                <h5 style="text-align: center; color: aliceblue;">Web Developer | FrontEnd | BackEnd</h5>
+            </div>
+        </section>
+        <section id="aboutme">
+            <div class="image">
+                <img src="1000000242.jpg" class="imageko">
+                <img src="1000000243.jpg" class="imageko2">
+            </div>
+            <div class="information">
+    <p>I am a Computer Science graduate with a growing passion for web development. 
+    As a novice developer, I am currently building my skills in both frontend and backend development.</p>
+    
+    <p>I have a foundational understanding of programming concepts, problem-solving, 
+    and software development practices, and I am eager to continue learning modern 
+    web technologies and frameworks.</p>
+    
+    <p>On the frontend side, I am exploring how to create responsive and user-friendly 
+    interfaces, while on the backend side, I am learning how servers, databases, 
+    and APIs work together to build functional web applications.</p>
+    
+    <p>I am motivated to improve my technical skills through hands-on projects, 
+    continuous learning, and real-world experience in the field of web development.</p>
+    <div class="contacts">
+    Email : balangkarl1124@gmail.com
+    </div>
+</div>
+
+        </section>
+       <section id="projects">
+    <div class="projects-container">
+        <h2 class="section-title">My Projects</h2>
+        
+        <div class="cards-grid" onclick="window.open('https://github.com/H3r0123456', '_blank')" style="cursor: pointer;">
+            <div class="card">
+                <div class="card-badge">Featured</div>
+                <h3>IncidentReportSys</h3>
+                
+                <div class="card-description">
+                    <p class="overview">Incident Report System is a web-based application designed to help organizations record, manage, and monitor incidents efficiently.</p>
+                    
+                    <p>The system allows users to submit incident reports, track their status, and view updates in real time. It aims to improve documentation, communication, and incident resolution within an organization.</p>
+                </div>
+                
+                <div class="key-features">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>User login and authentication</li>
+                        <li>Incident report submission</li>
+                        <li>Incident status tracking</li>
+                        <li>Admin dashboard for managing reports</li>
+                        <li>Search and filtering functionality</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-stack">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>Laragon</span>
+                </div>
+                
+                <div class="my-role">
+                    <h4>My Role</h4>
+                    <p>Designed the user interface | Developed frontend pages and backend functions | Managed database structure and connections | Implemented CRUD operations and authentication system</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        min-height: 100vh;     
+        width: 100%;            
+        background-color: rgb(49, 49, 49);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scroll-margin-top: 60px; 
+    }
+
+    #home { background-color: rgb(49, 49, 49); }
+    #aboutme { 
+        background-color: rgb(49, 49, 49); 
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    #contacts { background-color: rgb(49, 49, 49); }
+    #projects { background-color: rgb(49, 49, 49); }
+
+    .content {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    nav .right a {
+        margin-left: 1.5rem;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    nav .right a:hover {
+        color: #e5bd8d;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .homepage {
+        border-radius: 50%;
+        border: 3px solid #8a8987;
+        width: 250px;
+        height: 250px;
+        margin-top: -100px;
+        box-shadow: 0 0 15px #7e7e7e;
+    }
+
+    .image {
+        border-radius: 20px;
+        border: 3px solid #8a8987;
+        width: 500px;
+        height: 500px;
+        box-shadow: 0 0 15px #7e7e7e;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        transition: 1.5s ease;
+    }
+
+    .imageko {
+        opacity: 1;
+    }
+
+    .imageko2 {
+        opacity: 0;
+    }
+
+    .image:hover .imageko {
+        opacity: 0;
+    }
+
+    .image:hover .imageko2 {
+        opacity: 1;
+    }
+
+    .information {
+        height: 500px;
+        width: 500px;
+        padding: 30px;
+        margin: 100px;
+    }
+
+    p {
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .contacts {
+        color: aliceblue;
+        text-align: center;
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(229, 189, 141, 0.1);
+        border-radius: 10px;
+        font-size: 1.1rem;
+        margin-top: 100px;
+    }
+
+    #aboutme {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+     #projects {
+        background-color: rgb(30, 30, 35);
+        min-height: 100vh;
+        padding: 100px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .projects-container {
+        max-width: 1400px;
+        width: 40%;
+    }
+    
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: antiquewhite;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+        position: relative;
+    }
+    
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: #e5bd8d;
+    }
+    
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 40px;
+    }
+    
+    /* Card Styles */
+    .card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 24px;
+        padding: 30px;
+        border: 1px solid rgba(229, 189, 141, 0.2);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Hover Animation */
+    .card:hover {
+        transform: translateY(-10px);
+        border-color: #e5bd8d;
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+        background: rgba(255, 255, 255, 0.12);
+    }
+    
+    /* Shine Effect on Hover */
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(229, 189, 141, 0.1), transparent);
+        transition: left 0.6s ease;
+        z-index: 0;
+    }
+    
+    .card:hover::before {
+        left: 100%;
+    }
+    
+    /* Badge */
+    .card-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #e5bd8d;
+        color: #1a1a2e;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        z-index: 1;
+    }
+    
+    /* Card Icon */
+    .card-icon {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+    
+    .card:hover .card-icon {
+        transform: scale(1.1) rotate(5deg);
+    }
+    
+    /* Card Title */
+    .card h3 {
+        color: #e5bd8d;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        border-left: 4px solid #e5bd8d;
+        padding-left: 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .card:hover h3 {
+        color: #ffd700;
+        border-left-color: #ffd700;
+    }
+    
+    /* Description */
+    .card-description {
+        margin-bottom: 20px;
+    }
+    
+    .card-description .overview {
+        font-weight: bold;
+        color: #e5bd8d;
+        margin-bottom: 15px;
+    }
+    
+    .card-description p {
+        color: #ccc;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    /* Key Features */
+    .key-features {
+        background: rgba(229, 189, 141, 0.08);
+        border-radius: 16px;
+        padding: 15px 20px;
+        margin: 20px 0;
+        transition: all 0.3s ease;
+    }
+    
+    .card:hover .key-features {
+        background: rgba(229, 189, 141, 0.12);
+    }
+    
+    .key-features h4 {
+        color: #e5bd8d;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    
+    .key-features ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 20px;
+    }
+    
+    .key-features li {
+        color: #ccc;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    /* Tech Stack */
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    
+    .tech-stack span {
+        background: rgba(229, 189, 141, 0.15);
+        color: #e5bd8d;
+        padding: 6px 14px;
+        border-radius: 25px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    .card:hover .tech-stack span {
+        background: rgba(229, 189, 141, 0.3);
+        transform: scale(1.05);
+    }
+    
+    /* My Role */
+    .my-role {
+        margin: 20px 0;
+        padding: 15px;
+        border-left: 3px solid #e5bd8d;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 0 12px 12px 0;
+    }
+    
+    .my-role h4 {
+        color: #e5bd8d;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+    
+    .my-role p {
+        color: #bbb;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    h1:hover {
+        animation: bounce 3s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.8);
+        }
+    }
+
+</style>
